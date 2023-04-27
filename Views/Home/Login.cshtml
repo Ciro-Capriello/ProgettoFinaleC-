@@ -1,0 +1,23 @@
+﻿
+@model User
+
+@using (Html.BeginForm())
+{
+
+
+<div>
+	@Html.LabelFor(model => model.Email)
+	<div>
+		@Html.EditorFor(model => model.Email)
+	</div>
+</div>
+
+<div>
+	@Html.LabelFor(model => model.Password)
+	<div>
+		@Html.EditorFor(model => model.Password)
+	</div>
+</div>
+
+<input type="submit" value="Save" />
+}
